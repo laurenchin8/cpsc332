@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- This is 3a-->
+<title>Lauren Chin CPSC 332 Web Development</title>
+
+<!-- This is 3h (adding style)-->
+<style>
+    h1 {
+        color: lightskyblue;
+    }
+</style>
+
+</head>
+
+<body>
+
+<!-- This is 3b-->
+<h1>HW1 Submission</h1>
+
+<!-- This is 3c and 3d (style- bold and italics)-->
+<p>
+    What I hope to gain from this course is the ability to create a basic website using <strong id="bold1">HTML, CSS, and JavaScript</strong>. 
+    I know that this won't be necessarily a web design class where we can take a lot of time to make our websites look <em>pretty</em>,
+    but I want to be able to create a <strong id="bold2">well structured</strong> and <strong id="bold3">functioning</strong> website with multiple pages.
+</p>
+
+<!-- This is 3e and 3f (image saved in hw folder)-->
+<img src="panda_computer_image.jpg" alt="Cute web dev panda">
+
+<!-- This is 3g-->
+<p>
+    <a href="https://stock.adobe.com/images/cute-panda-operating-laptop-cartoon-vector-icon-illustration-animal-technology-icon-concept-isolated-premium-vector-flat-cartoon-style/403263390">Link to panda web dev image</a>
+</p>
+
+<!-- This is 3i (button and javascript function)-->
+<p>
+    <button id="blue_bold_btn">Make Bold Font Royal Blue</button>
+    <button id="lightblue_bold_btn">Make Bold Font Light Blue</button>
+    <button id="black_bold_btn">Make Bold Font Black</button>
+</p>
+
+<script>
+    let blue_bold_button = document.getElementById("blue_bold_btn");
+    blue_bold_button.addEventListener("click", function() {
+        updateBold("blue");
+    });
+
+    let lightblue_bold_button = document.getElementById("lightblue_bold_btn");
+    lightblue_bold_button.addEventListener("click", function() {
+        updateBold("lightskyblue");
+    });
+
+    let black_bold_button = document.getElementById("black_bold_btn");
+    black_bold_button.addEventListener("click", function() {
+        updateBold("black");
+    });
+
+    function updateBold(new_color) {
+        let bold1_text = document.getElementById("bold1");
+        bold1_text.style.color = new_color;
+        let bold2_text = document.getElementById("bold2");
+        bold2_text.style.color = new_color;
+        let bold3_text = document.getElementById("bold3");
+        bold3_text.style.color = new_color;
+    }
+</script>
+
+</body>
+</html>
