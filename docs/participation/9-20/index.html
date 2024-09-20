@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participation 4. Basic CSS</title>
+    <!-- Embedded stylesheet-->
+    <style>
+        h1 {
+            color: cornflowerblue;
+        }
+        button {
+            all: unset;
+            background: steelblue;
+        }
+        .button:hover {
+            transform: scale(1.125);
+            box-shadow: 0 12px 18px -10px blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Inline style (overrides embedded stylesheet) -->
+    <h1 style="color: blueviolet">Participation 4. Basic CSS</h1>
+    <button class="button" role="button">Button!</button>
+</body>
+
+</html>
