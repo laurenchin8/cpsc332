@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fall Weather Forecast</title>
+    <!-- Link to external stylesheet -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Embedded styles will go here -->
+    <style>
+        h1 {
+            color: blue;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .three_day_forecast {
+            background-color: white;
+            padding: 20px;
+            border: 5px solid cornflowerblue;
+            margin: 20px auto;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .day {
+            color: black;
+            text-align: center;
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Inline styling to center -->
+    <h1 style="text-align: center;">Fall Weather Forecast</h1>
+    <section class="three_day_forecast">
+        <div class="forecast">
+            <p class="day">Monday: Sunny, 60°F<img src="sun.avif" alt="sun" width="20"></p>
+            <p class="day">Tuesday: Cloudy, 55°F</p>
+            <p class="day">Wednesday: Rainy, 50°F</p>
+        </div> 
+    </section>
+    
+    <!-- Example of where inline styles can be added -->
+    <footer style="text-align: center;">Last updated: September 23</footer>
+</body>
+
+</html>
