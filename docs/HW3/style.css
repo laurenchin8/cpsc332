@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold; 
+    color: #ffffff;
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
+    transition: color 0.3s ease; 
+}
+
+.logo > img {
+    border-radius: 50%;
+    float: left;
+    opacity: 1;
+    width: 100px;
+    height: 100px;
+}
+
+.logo:hover {
+    color: #4A90E2; 
+}
+
+.logo > img:hover {
+    opacity: 0.5;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navigation li {
+    margin: 0 15px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: #4A90E2;
+}
+
+.container {
+    display: flex;
+}
+
+.introduction {
+    background-color: #f4f4f4;
+    width: 30%;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+}
+
+#summary_para {
+    padding-top: 30px; /*separating summary paragraph*/
+}
+
+.main-content {
+    background-color: #ffffff;
+    width: 70%;
+    padding: 20px;
+}
+
+.main-content li:hover {
+    background-color: #e0e0e0; /* highlight element on hover */
+}
+
+.career_summary, .interests_and_hobbies {
+    background-color: #f4f4f4;
+    width: 100%; 
+    padding: 10px; 
+}
+
+h1 {
+    color: #333;
+}
+
+table caption{
+    font-size: 20px;
+    font-weight: bold; 
+    margin-bottom: 10px; 
+}
+
+table th{
+    background-color: #4A90E2;
+}
+
+table tr:nth-child(even) {
+    background-color: rgb(209, 236, 245); /* even rows lightblue*/
+}
+
+table tr:nth-child(odd) {
+    background-color: white; /* odd rows white*/
+}
+
+table tr:hover {
+    background-color: #e0e0e0; /* highlight row on hover */
+}
+
+table, th, td { 
+    border: 2px solid gray; 
+} 
+
+a > img:hover {
+    box-shadow: 0 0 5px 5px #4A90E2;
+}
+
+ol > li {
+    font-weight: bold;
+}
