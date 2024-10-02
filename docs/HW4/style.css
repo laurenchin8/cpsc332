@@ -1,0 +1,63 @@
+body {
+    font-family: cursive, monospace, sans-serif; /* fun font to try to fit Halloween theme */
+    margin: 0px;
+    padding: 0px;
+    background-color: #2c2c2c; 
+    color: #ffffff; 
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #8c00cd; /* purple background for header! */
+}
+
+h1 {
+    color: #ff9900; /* bright orange text for header */
+}
+
+main {
+    padding: 20px;
+}
+
+.candy-collection {
+    display: flex; /* flex box design */
+    flex-wrap: wrap; /* candies wrap to next line if needed */
+    justify-content: space-around; /* helps with spacing of candies */
+    margin: auto auto;
+}
+
+.candy {
+    background-color: #4b2c2c; /* purple-ish brown background color for candies */
+    border: 2px solid #ff9900; /* orange border! */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 150px; 
+    transition: background-color 0.3s, transform 0.3s; /* transition effects */
+}
+
+.candy img {
+    width: 100px; /* setting each candy size so uniform */
+    height: 100px;
+}
+
+.candy:hover {
+    background-color: #ff9900; /* change to bright orange on hover */
+    transform: translateY(-5px); /* bounce effect */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #8c00cd; /* same purple background as header */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer > p {
+    font-weight: bold;
+    font-size: medium; /* making footer font bigger and bold */
+}
