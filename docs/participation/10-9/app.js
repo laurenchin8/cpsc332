@@ -1,5 +1,11 @@
 "use strict";
 
+// for running this on local web server
+// refer to this website: https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/set_up_a_local_testing_server
+// run command python -m http.server 9001
+// url is localhost:9001
+// or whatever port number you want can replace 9001 
+
 // import modules
 import { addTask, clearInput } from "./todo.js";
 import { saveTasks, loadTasks } from "./storage.js";
