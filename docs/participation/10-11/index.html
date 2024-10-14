@@ -26,7 +26,40 @@
             console.log($container);
 
             // using jQuery selector
-            let $containerToo = $("#container")
+            let $containerToo = $("#container"); //$() jQuery syntax
+
+            // select DOM elements, like above
+            // select our ol, and modify
+            $("ol").addClass("ordered-list");
+            $(".ordered-list").append("<li>jQuery Introduction</li>");
+            $(".ordered-list").append($("<li>").text("Selectors"));
+            
+            let $filteredContent = $("li:contains('jQuery')"); // selecting all list content with jQuery in text
+            console.log($filteredContent);
+            
+            // dynamically adding button
+            $("#container")
+                .append($("<button>")
+                    .text("Click me!")
+                    .attr("id", "event-btn"));
+            
+            $("#event-btn").on("click", log);
+
+            function log() {
+                console.log("button clickd...");
+            }
+
+            // next step modify style
+            $("div").css("border", "2px double purple");
+
+            // object literal method
+            $("div").css({
+                padding: "10px",
+                borderRadius: "10px",
+                marginTop: "10px",
+                "background-color": "rgb(235, 97, 35)"
+            });
+
         });
 
     </script>
